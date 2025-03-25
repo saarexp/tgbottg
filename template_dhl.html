@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>DHL Afgiftebewijs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f6f6f6; margin: 0; padding: 0;">
+  <div style="max-width: 600px; margin: auto; background-color: #ffffff; padding: 20px;">
+    
+    <img src="https://static.dhlparcel.nl/images/cns/ecommerce/basic-emailheader.png" alt="DHL Header" style="width: 100%; height: auto;" />
+    
+    <h1 style="font-size: 20px; color: #d40511;">JOUW DIGITALE AFGIFTEBEWIJS</h1>
+
+    <p><strong> {{ naam }},</strong></p>  
+    <p>
+      Bedankt voor het inleveren van je pakket 
+      <a href="https://www.dhl.com/nl-en/home/tracking.html?tracking-id={{ track }}" style="color: #d40511;">{{ track }}</a>.
+      We bezorgen je pakket bij {{ bedrijf }}
+    </p>
+
+    <hr style="border: 1px solid #eee; margin: 24px 0;" />
+
+    <table style="width: 100%; margin-bottom: 24px;">
+      <tr>
+        <td style="width: 64px;">
+          <img src="https://static.dhlparcel.nl/images/cns/2021/200x200/delivered.png" width="64" />
+        </td>
+        <td style="padding-left: 16px;">
+          <strong>Ingeleverd op</strong><br /> <!--// verander de datum-->
+          {{ datum }} <br />
+          {{ tijd }}
+        </td>
+      </tr>
+    </table>
+
+    <table style="width: 100%; margin-bottom: 24px;">
+      <tr>
+        <td style="width: 64px;">
+          <img src="https://static.dhlparcel.nl/images/cns/2021/200x200/servicepoint.png" width="64" />
+        </td>
+        <td style="padding-left: 16px;">
+          <strong>{{ pakketpunt }}</strong><br />
+          {{ adres }}<br /> 
+          {{ postcode_stad }}
+        </td>
+      </tr>
+    </table>
+
+    <h3 style="margin-top: 40px;">Volg je pakket</h3>
+    <p>Benieuwd waar je pakket is? Met de Mijn DHL app volg je elke stap op de voet.</p>
+    <a href="https://www.dhlparcel.nl/nl/mijn-dhl-app" style="display: inline-block; background-color: #d40511; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 4px;">Naar de Mijn DHL app</a>
+
+    <hr style="border: 1px solid #eee; margin: 40px 0;" />
+
+    <h3>En, ging het soepel?</h3>
+    <p>We horen graag hoe tevreden je bent over onze service. Beoordeel het DHL punt waar je je pakket hebt ingeleverd.</p>
+    <a href="https://www.dhl.com/nl/review" style="display: inline-block; background-color: #ffffff; color: #d40511; border: 1px solid #d40511; padding: 10px 20px; text-decoration: none; border-radius: 4px;">Geef je mening</a>
+
+    <hr style="border: 1px solid #eee; margin: 40px 0;" />
+
+    <p style="font-size: 10px; color: #666;">
+      Dit bericht is automatisch verstuurd, je kunt er niet op reageren. Vragen? Bezoek onze 
+      <a href="https://www.dhlparcel.nl/nl/consument/support" style="color: #666;">support-pagina</a>.
+    </p>
+
+    <p style="font-size: 10px; color: #999;">© 2025 DHL eCommerce Netherlands B.V. Alle rechten voorbehouden.</p>
+
+  </div>
+</body>
+</html>
